@@ -17,6 +17,7 @@ public class ProductoSubastado implements Observable {
     @Override
     public void agregarSubastador(Observador observador) {
         observadores.add(observador);
+        observador.participar(this);
     }
 
     @Override
